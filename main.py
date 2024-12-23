@@ -65,6 +65,8 @@ print(f"Player 1 played: {player1_played_card}")
 print(f"Player 2 played: {player2_played_card}")
 
 # Compare the values of the cards in play
+### !!! --- I need to fix this part --- !!! ###
+# Because we have not clarified what numerical value the face cards have, the logic below fails to compare strings to integers
 
 # If player 1 wins, they get both cards
 if player1_played_card > player2_played_card:
