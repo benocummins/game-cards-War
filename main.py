@@ -78,8 +78,8 @@ while len(player1_hand) > 0 and len(player2_hand) > 0:
     player2_played_card = player2_hand.pop(0)
 
     # Print the cards in play
-    print(f"Player 1 played: {player1_played_card}")
-    print(f"Player 2 played: {player2_played_card}")
+    #print(f"Player 1 played: {player1_played_card}")
+    #print(f"Player 2 played: {player2_played_card}")
     
     # Get the integer value of the cards played
     player1_played_value = get_card_value(player1_played_card)
@@ -90,7 +90,7 @@ while len(player1_hand) > 0 and len(player2_hand) > 0:
     # If player 1 wins, they get both cards
     if player1_played_value > player2_played_value:
         # Print the winner of the round
-        print("Player 1 wins this round")
+        #print("Player 1 wins this round")
         # Add the played cards to player 1's hand
         player1_hand.append(player1_played_card)
         player1_hand.append(player2_played_card)
@@ -98,7 +98,7 @@ while len(player1_hand) > 0 and len(player2_hand) > 0:
     # If player 2 wins, they get both cards
     elif player2_played_value > player1_played_value:
         # Print the winner of the round
-        print("Player 2 wins this round")
+        #print("Player 2 wins this round")
         # Add the played cards to player 2's hand
         player2_hand.append(player1_played_card)
         player2_hand.append(player2_played_card)
@@ -129,7 +129,7 @@ while len(player1_hand) > 0 and len(player2_hand) > 0:
         # If player 1 wins the faceup card, they get all the cards
         if player1_faceup_value > player2_faceup_value:
             # Print the winner of the round
-            print("Player 2 won WAR! They get all the cards")
+            print("Player 1 won WAR! They get all the cards")
             # Add all the played cards to Player 1's hand
             # Player 1's first played card
             player1_hand.append(player1_played_card)
@@ -164,6 +164,7 @@ while len(player1_hand) > 0 and len(player2_hand) > 0:
             
         # If it's a tie again, the players go to WAR again!
         # Normally they go to war again, but I am going to end the game here so I can figure this out later
+        ### !!! -- This doesn't actually stop the game and both players just lose those cards --- !!! ###
         else:
             print("It's a tie again! The game is over!")
             
