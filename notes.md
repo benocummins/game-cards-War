@@ -23,11 +23,6 @@ Notes for stepping away from the work:
 
 The suits don't matter, you could simplify the lists by removing the requirement of storing and printing the suit value (I does add depth to the descriptions)
 
-The code doesn't know the value of Jack, Queen, King or Ace
-We need to define their numerical value with a list? dictionary? what is the difference? What is a dictionary?
+Ran into a bug where the players went to war but one player did not have enough cards to play war. I believe that is a loosing scenario for that player and the game would be over as that player ran out of cards.
 
-We need to make it loop through the player's hands. Currently it runs for one round and then the code ends
-Ways to loop
-Have another level of ifs that compare the number of cards in each player's hands at the end of this logic that exits the program if either player's hands drop to zero
-There is probably a way to use a while loop to make the comparision, that way you aren't reading a really long list of if statements (makes it more obvious it is the game loop)
-
+Need to include logic to determine the winner of the game.
